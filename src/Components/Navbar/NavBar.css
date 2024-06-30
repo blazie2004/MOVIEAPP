@@ -1,0 +1,56 @@
+.NavBarWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--prime-blue);
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--dull-blue);
+    color: white;
+}
+.NavBarWrapper div:nth-child(1) {
+    font-size: xx-large;
+    letter-spacing: 15px;
+}
+.NavBarWrapper div:nth-child(2) {
+    flex-basis: 65%;
+}
+.NavBarWrapper div:nth-child(2) input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--light-prime-gray);
+    border: none;
+    border-radius: 5px;
+}
+.SearchMovieWrapper {
+    position: relative;
+}
+.result-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid var(--prime-blue);
+    border-radius: 5px;
+    width: 100%;
+    z-index: 10; 
+    margin-top: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.result-list span {
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 1px solid black;
+}
+.result-list span:hover {
+    background-color: var(--light-prime-gray);
+}
+.MovieNameWrapper > a{
+    color: white;
+    text-decoration: none;
+
+}
