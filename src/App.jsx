@@ -8,6 +8,7 @@ import NavBar from './Components/Navbar/NavBar'
 
 function App() {
   const [count, setCount] = useState(0)
+  console.log("git changes...");
   console.log(import.meta.env.VITE_API_KEY);
   
   return (
