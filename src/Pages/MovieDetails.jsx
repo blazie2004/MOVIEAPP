@@ -41,16 +41,16 @@ function MovieDetails() {
                         />
             }
             {movie && <div className="movie-details">
-                <div>
+                <div className="plot">
                     Plot: {movie.Plot}
                 </div>
-                <div>
+                <div className="actor">
                     Actors: {movie.Actors}
                 </div>
                 <div>
                     Genre: {movie.Genre.split(',').map((genre) => {
                         return <span className="genre" key={genre}>{genre}</span>
-                    })}
+                    })} 
                 </div>
                 <div>
                     <Rating items={10} value={Math.floor(movie.imdbRating)} />

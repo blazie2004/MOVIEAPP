@@ -12,13 +12,6 @@ function Home(){
       return (
         <div className="MoviesWrapper">
             <MovieList />
-            {/* <MovieCard {...movie}/>
-            <MovieCard {...movie}/>
-            <MovieCard {...movie}/>
-            <MovieCard {...movie}/>
-            <MovieCard {...movie}/>
-            <MovieCard {...movie}/> */}
-          
             
         </div>
     )
